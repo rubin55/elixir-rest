@@ -1,6 +1,6 @@
 # ElixirRest
 
-**A minimal try-out using Elixir, HTTP, REST and JSON.**
+*A minimal try-out using Elixir, HTTP, REST and JSON.*
 
 ## Installation
 
