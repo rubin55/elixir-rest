@@ -21,6 +21,9 @@ defmodule ElixirRest.MixProject do
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
-    []
+    [
+      {:plug_cowboy, "~> 2.5"},
+      {:jason, "~> 1.3"}
+    ]
   end
 end
