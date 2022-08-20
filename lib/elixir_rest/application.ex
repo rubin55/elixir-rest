@@ -1,12 +1,13 @@
 defmodule ElixirRest.Application do
-  @moduledoc false
-
   use Application
 
   @impl true
   def start(_type, _args) do
     children = [
-      {Plug.Cowboy, scheme: :http, plug: ElixirRest.Router, options: [port: 8080]}
+      {Plug.Cowboy,
+       scheme: :http,
+       plug: ElixirRest.Router,
+       options: [port: Application.get_env(:elixir_rest, :app_port)]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html.
