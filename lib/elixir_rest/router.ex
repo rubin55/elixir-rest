@@ -22,7 +22,7 @@ defmodule ElixirRest.Router do
 
   # Handler for GET request on "/".
   get "/" do
-    send_resp(conn, 200, "OK")
+    send_resp(conn, 200, "OK #{Application.get_env(:elixir_rest, :app_name)}")
   end
 
   # Fallback handler when we have no match.

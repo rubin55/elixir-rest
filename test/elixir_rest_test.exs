@@ -21,6 +21,6 @@ defmodule ElixirRestTest do
     # Assert validity of results.
     assert conn.state == :sent
     assert conn.status == 200
-    assert conn.resp_body == "OK"
+    assert conn.resp_body == "OK #{Application.get_env(:elixir_rest, :app_name)}"
   end
 end
