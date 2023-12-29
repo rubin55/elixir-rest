@@ -23,7 +23,8 @@ defmodule ElixirRest.MixProject do
   defp deps do
     [
       {:plug_cowboy, "~> 2.5"},
-      {:jason, "~> 1.3"}
+      {:jason, "~> 1.3"},
+      {:benchee, "~> 1.0"}
     ]
   end
 end
